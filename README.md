@@ -29,7 +29,15 @@ Python helper code to run experiments (`runner.py`)
 3. Page fault: `/page_fault.c`
 
 
-
 ### Network (`experiments/network`)
+1. Round trip time: `/rtt/client.c`, `/rtt/server.c`
+2. Peak bandwidth: `/throughput/client.c`, `throughput/server.c`
+3. Connection setup, teardown: `/connection/client.c`, `connection/server.c`
+
 
 ### File System (`experiments/filesys`)
+1. File cache size: `/filecache/file_cache.c`
+2,3. File read time (includes Remote):
+  * Sequential: `/read_seq_argv.c`
+  * Random: `read_rand_argv.c`
+4. Contention: `contention/contention.c`, `run.py`
